@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My page</title>
+  <style>
+*{padding: 0; margin: 0;}
+.hed_block { height: 50px; width: 100px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+margin: 15px 355px; border: 1px solid; overflow: hidden; border: 0px; }
+.menu { width: 25px; height: 2px; background-color: black; margin: 3px 0px; }
+.section { width:100%; display: flex; flex-direction: row; justify-content: center; }
+.tagline_block_3 { height: 670px; width: 370px; margin: 60px 5px; overflow: hidden; justify-content: center; position: relative;}
+.messenger { height: 22px; width: 22px; overflow: hidden; }
+.team_image { width: 350px; height: 415px; background-color: #F2F2F2; margin: 0px 15px; display: flex; flex-direction: column; align-items: center; }
+.team_image_1 { width: 370px; height: 400px; margin: 0px 10px; display: flex; flex-direction: column; align-items: center; overflow: hidden; }
+.team_image_2 { width: 290px; height: 360px; margin: 0px 10px; display: flex; flex-direction: column; align-items: center; overflow: hidden; }
+.team_text { width: 300px; margin: 0px 10px; display: flex; flex-direction: column; align-items: center; overflow: hidden; }
+.image_3 { height: 190px; width: 190px; margin: 30px 0px; border-radius: 200px; overflow: hidden;  }
+.text { font-size: 21px; font-weight: 700; }
+.text_1 { font-size: 18px; font-weight: 100; letter-spacing: 2px; margin: 3px 0px; }
+.text_2 { font-size: 18px; font-weight: 100; margin: 15px 15px 0px 15px; }
+.text_3 { color: white; font-size: 30px; font-weight: 300; letter-spacing: 2px; margin: 18px 0px; }
+.text_4 { color: white; font-size: 22px; font-weight: 300; letter-spacing: 1px; }
+.button { height: 45px; width: 200px; color: white; font-size: 15px; font-weight: 600; background-color: rgba(28,28,28,0); border: 2px solid white; margin: 18px 0px;  }
+.button:hover { background-color: white; color: #D67818; }
+
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid;
+  border-color: #9999A6;
+  overflow: hidden;
+  text-align:center;
+  line-height: 5em;
+}
+
+#clarification {
+ width:100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+}
+
+#work {
+ width:100%;
+ height: 718px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ background-position: 15%, 50%;
+ background-size: cover;
+ background-image: url(12.jpg), linear-gradient(0deg, rgba(214,120,24,0.45), rgba(214,120,24,0.45));
+ background-blend-mode: soft-light;
+ overflow: hidden;
+}
+
+#work_2 {
+ width:100%;
+ height: 805px;
+ display: flex;
+ align-items: flex-start;
+ flex-direction: column;
+ justify-content: center;
+ background: #F2F2F2;
+ overflow: hidden;
+}
+
+#work_3 {
+ width:100%;
+ height: 630px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ overflow: hidden;
+}
+
+#tagline_block_1 {
+  height: 700px;
+  width: 390px;
+  overflow: hidden;
+}
+
+#icon {
+ height: 22px;
+ width: 160px;
+ margin: 250px 35px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+
+}
+
+#tagline_block_2 {
+ height: 700px;
+ width: 1510px;
+ overflow: hidden;
+ background-image: url(2.jpg);
+ background-position: 98%, 50%;
+}
+
+#tagline_subblock {
+ height: 700px;
+ width: 500px;
+ margin: 0px 620px;
+ background-color: rgba(214, 120, 24, 0.85);
+ overflow: hidden;
+}
+
+#tagline_subblock_1 {
+ height: 350px;
+ width: 350px;
+ margin: 50px 0px;
+ background: #E0E5EB;
+ overflow: hidden;
+ justify-content: space-around;
+}
+
+#tagline_subblock_2 {
+ height: 290px;
+ width: 290px;
+ margin: 380px 0px;
+ background: #D67818;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 10;
+
+}
+#team {
+ width:100%;
+ display: block;
+ flex-direction: row;
+ justify-content: center;
+ }
+
+#team_block {
+ height: 180px;
+ width:100%;
+ display: flex;
+ background-color: #D67818;
+ margin: 180px 0px;
+ z-index: 1;
+}
+
+#team_block_1 {
+ height: 228px;
+ width: 990px;
+ background-color: #D67818;
+ z-index: 1;
+}
+
+#team_1 {
+ width:100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin: 50px 0px;
+ position: absolute;
+ z-index: 2;
+ }
+
+ #team_2 {
+ width:100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin: 110px 0px;
+ position: absolute;
+ z-index: 2;
+ }
+
+ .team_3 {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin: 0px 0px;
+ }
+
+#image_1 {
+ height: 350px;
+ width: 350px;
+ margin: 18px 0px;
+ border-radius: 200px;
+ overflow: hidden;
+}
+
+#team_image {
+ width: 530px;
+ height: 680px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin: 0px 0px;
+ position: absolute;
+ z-index: 2;
+ margin: 0px 400px;
+ overflow: hidden;
+ }
+
+#team_text_block {
+ width: 510px;
+ height: 426px;
+ background: white;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ box-shadow: 2px 2px 20px gray;
+ position: absolute;
+ margin: 0px 990px;
+ overflow: hidden;
+ }
+
+#text_1 {
+ color: #44C4A1;
+ font-size: 52px;
+ font-weight: 900;
+ margin: 0px 1px 1px 35px;
+ }
+
+#text_2 {
+ color: #D67818;
+ font-size: 30px;
+ font-weight: normal;
+ margin: 5px 35px;
+}
+
+#text_3 {
+ color: white;
+ font-size: 23px;
+ font-weight: 500;
+ line-height: 1.5;
+ margin: 0px 35px 35px 35px;
+}
+
+#text_4 {
+ color: #9999A6;
+ font-size: 20px;
+ font-weight: normal;
+ margin: 180px 1px;
+}
+
+#text_5 {
+ font-size: 19px;
+ font-weight: normal;
+ line-height: 1.3;
+ margin: 0px 20px;
+}
+#text_5_1 {
+ font-size: 35px;
+ font-weight: 700;
+ margin: 25px 15px 15px 20px;
+}
+
+#text_6 {
+ color: white;
+ font-size: 19px;
+ font-weight: normal;
+ line-height: 1.3;
+ margin: 0px 20px;
+}
+#text_6_1 {
+ color: white;
+ font-size: 35px;
+ font-weight: 700;
+ margin: 27px 15px 15px 20px;
+}
+#text_7 {
+ color: #D67818;
+ font-size: 64px;
+ font-weight: 900;
+ margin: 60px 0px 15px 0px;
+}
+
+#text_7_1 {
+ font-size: 23px;
+ font-weight: normal;
+ margin: auto;
+ border-spacing: 5px 0px;
+}
+
+#text_8 {
+ color: #D67818;
+ font-size: 64px;
+ font-weight: 900;
+}
+
+#text_9 {
+ color: #555c66;
+ font-size: 20px;
+ font-weight: 550;
+ line-height: 1.5;
+}
+
+#text_10 {
+ font-size: 20px;
+ font-weight: 300;
+ letter-spacing: 1px;
+ margin: 20px 0px 20px 0px;
+}
+
+#text_11 {
+ color: white;
+ font-size: 80px;
+ font-weight: 700;
+}
+
+#text_12 {
+ font-size: 36px;
+ font-weight: 600;
+ margin: 55px 30px 0px 30px;
+}
+
+#text_14 {
+ font-size: 18px;
+ font-weight: 300;
+ margin: 30px 30px 20px 30px;
+ line-height: 1.5;
+}
+
+#text_15 {
+ font-size: 55px;
+ font-weight: 600;
+}
+
+#text_15_1 {
+ font-size: 17px;
+ font-weight: 700;
+  margin: 20px 300px;
+}
+
+#team_text {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin: 600px 0px;
+ position: absolute;
+ z-index: 2;
+ }
+
+#team_text_1 {
+ width: 470px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0px 80px 60px 0px;
+ }
+
+#team_text_2 {
+ width: 600px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ margin: 0px 0px 60px 0px;
+ }
+
+.team_text_3 {
+ width: 1000px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 80px 0px 30px 0px;
+}
+
+#team_text_4 {
+ width: 100px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0px 0px;
+}
+
+
+#rectangle {
+ width: 58px;
+ height: 6px;
+ background-color: white;
+ opacity: 1;
+ margin: 470px 35px 18px 35px;
+}
+
+#team_rectangle {
+ width: 675px;
+ height: 950px;
+ background-color: #E5E5E5;
+ margin: 0px 530px;
+ z-index: 1;
+ }
+
+.button_1 {
+ height: 45px;
+ width: 200px;
+ color: #D67818;
+ font-size: 15px;
+ font-weight: 600;
+ background-color: rgba(28,28,28,0);
+ border: 2px solid #D67818;
+}
+.button_1:hover {
+ background-color: #D67818;
+ color: white;
+}
+
+#container {
+ width:100%;
+ display: block;
+}
+</style>
+</head>
+<body>
+<div id="container">
+
+  <div id="header">
+    <div class="hed_block"> <img src="1.png"> </div>
+    <div class="hed_block">
+      <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <div id="tagline_block_1">
+      <img src="3.png" style="margin: 100px 1px 1px 35px;">
+      <p id="text_1" align="left">Больше походов.</p>
+      <p id="text_2" align="left">МЕНЬШЕ ВОЛНОВАТЬСЯ.</p>
+      <div id="icon">
+        <div class="messenger">
+          <a href="https://www.facebook.com/"><img src="i1.png" style="width: 100%; height: 100%;"></a>
+        </div>
+        <div class="messenger">
+          <a href="https://twitter.com/"><img src="i2.png" style="width: 100%; height: 100%;"></a>
+        </div>
+        <div class="messenger">
+          <a href="https://www.instagram.com/"><img src="i3.png" style="width: 100%; height: 100%;"></a>
+        </div>
+        <div class="messenger">
+          <a href="https://www.youtube.com/"><img src="i4.png" style="width: 100%; height: 100%;"></a>
+        </div>
+      </div>
+    </div>
+    <div id="tagline_block_2">
+      <div id="tagline_subblock">
+        <div id="rectangle"></div>
+        <p id="text_3" align="left">Это величественный пейзаж гор, глубоких долин и ледников, над которым возвышается гора Эверест
+          (также известная как Сагарматха в Непале) на высоте 8848 м над уровнем моря.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="section">
+    <div class="tagline_block_3">
+      <div id="image_1">
+        <img src="4.jpg" width="363" height="545" style="transform: translate(-3%, -17%)">
+      </div>
+      <div id="tagline_subblock_1">
+        <p id="text_5_1">01</p>
+        <p id="text_5" align="left">Amet mattis vulputate enim nulla aliquet. Morbi non arcu risus quis varius quam quisque id. Ultrices gravida dictum fusce ut placerat.
+          Sit amet nisl suscipit adipiscing bibendum est ultricies integer imperdiet nulla</p>
+      </div>
+    </div>
+    <div class="tagline_block_3">
+      <img src="5.jpg" style="transform: translate(-25%, 0%); height: 100%;">
+      <div id="tagline_subblock_2">
+        <p id="text_6_1">02</p>
+        <p id="text_6" align="left">Когда ум совершенно неподвижен, наша душа выражает. Подпишитесь на еженедельную расценку. Бог нейтрален. Духовные учения. Лучшее понимание. Философия жизни.</p>
+      </div>
+    </div>
+    <div class="tagline_block_3">
+      <p id="text_4" align="left">Tristique sollicitudin nibh sit amet Commodo nulla. Volutpat consquat mauris nunc congue nisi vitae Suscipit.
+        Donec massa sapien faucibus et. Morbi tincidunt ornare massa eget. Massa massa ultricies mi quis hendrerit dolor magna eget.
+        Facilisis mauris sit amet massa vitae toror condimentum lacinia. Feugiat nibh sed pulvinar proin gravida hendrerit.</p>
+    </div>
+  </div>
+
+
+
+  <div id="team">
+      <p id="text_7" align="center">Встретиться с командой</p>
+      <table id="text_7_1">
+        <td>Изображения от</td>
+        <td> <a href="https://ru.freepik.com/">Freepik</a></td>
+      </table>
+
+      <div id="team_1">
+        <div class="team_image">
+          <div class="image_3"><img src="6.jpg" width="196" height="196"></div>
+          <p class="text">Адам Джонсон</p>
+          <p class="text_1" align="center">ГЛАВНЫЙ ОПЕРАЦИОННЫЙ ДИРЕКТОР</p>
+          <p class="text_2" align="center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </div>
+        <div class="team_image">
+          <div class="image_3"><img src="7.jpg" width="196" height="196"></div>
+          <p class="text" align="center">Жениться на Хадсоне</p>
+          <p class="text_1" align="center">ДИРЕКТОР ПО МАРКЕТИНГУ</p>
+          <p class="text_2" align="center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </div>
+        <div class="team_image">
+          <div class="image_3"><img src="8.jpg" width="196" height="196"></div>
+          <p class="text">Боб Ларсон</p>
+          <p class="text_1" align="center">МЕНЕДЖЕР ПО СВЯЗЯМ С ОБЩЕСТВЕННОСТЬЮ</p>
+          <p class="text_2" align="center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </div>
+      </div>
+    <div id="team_block"></div>
+  </div>
+
+
+
+  <div id="clarification">
+    <div id="team_2">
+      <div class="team_image_1"><img src="9.jpg" width="400" height="400"></div>
+      <div class="team_image_1"><img src="10.jpg"></div>
+      <div class="team_image_1"><img src="11.jpg" style="transform: translate( 0%, -20%);"></div>
+    </div>
+    <div id="team_text">
+      <div id="team_text_1"><p id="text_8" align="left">Как мы с вами работаем</p></div>
+      <div id="team_text_2">
+        <p id="text_9" align="left">SAMPLE TEXT. LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT NULLAM NUNC JUSTO SAGITTIS SUSCIPIT ULTRICES.</p>
+        <table id="text_10">
+          <tr><td>ИЗОБРАЖЕНИЯ ИЗ</td></tr>
+          <tr><td><a href="https://ru.freepik.com/">FREEPIK</a></td></tr>
+        </table>
+        <form action="https://nicepage.com"><button class="button_1"> УЧИТЬ БОЛЬШЕ </button></form>
+      </div>
+    </div>
+    <div id="team_rectangle"> </div>
+  </div>
+
+
+  <div id="work">
+    <div class="team_text_3">
+      <p id="text_11" align="center">Дела, которые необходимо сделать</p>
+    </div>
+    <div class="team_3">
+      <div class="team_text">
+        <p class="text_3" align="center">Приключения</p>
+        <em><p class="text_4" align="center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p></em>
+        <form action="https://nicepage.com"><button class="button"> УЧИТЬ БОЛЬШЕ </button></form>
+      </div>
+      <div class="team_text">
+        <p class="text_3" align="center">Покупка</p>
+        <em><p class="text_4" align="center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p></em>
+        <form action="https://nicepage.com"><button class="button"> УЧИТЬ БОЛЬШЕ </button></form>
+      </div>
+      <div class="team_text">
+        <p class="text_3" align="center">Искусство и культура</p>
+        <em><p class="text_4" align="center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p></em>
+        <form action="https://nicepage.com"><button class="button"> УЧИТЬ БОЛЬШЕ </button></form>
+      </div>
+      <div class="team_text">
+        <p class="text_3" align="center">Семейное развлечение</p>
+        <em><p class="text_4" align="center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p></em>
+        <form action="https://nicepage.com"><button class="button"> УЧИТЬ БОЛЬШЕ </button></form>
+      </div>
+    </div>
+  </div>
+
+  <div id="work_2">
+    <div id="team_block_1"></div>
+    <div id="team_image"><img src="11.jpg" width="527" height="791"  style="transform: translate(0%, -7%)"></div>
+    <div id="team_text_block">
+      <p id="text_12" align="center">Спланируйте свой следующий побег с полным спокойствием</p>
+      <p id="text_14" align="center">Ut tellus elementum sagittis vitae et leo duis. Nisi est sit amet facilisis magna etiam. Odio facilisis mauris сядьте, амет масса витэ тортор. Eros donec ac odio tempor orci dapibus ultrices in.</p>
+      <form action="https://nicepage.com"><button class="button_1"> УЧИТЬ БОЛЬШЕ </button></form>
+    </div>
+  </div>
+
+
+  <div id="work_3">
+    <div class="team_text_3">
+      <p id="text_15">Экскурсии по дикой природе и природе</p>
+      <p id="text_15_1" align="center">Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut pharetra sit amet aliquam id.</p>
+    </div>
+    <div class="team_3">
+      <div class="team_image_2"><img src="14.jpg" style="max-width: 100%; height: auto;"></div>
+      <div class="team_image_2"><img src="15.jpg" style="max-width: 100%; height: auto;">></div>
+      <div class="team_image_2"><img src="16.jpg" style="max-width: 100%; height: auto;">></div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
